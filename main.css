@@ -1,7 +1,7 @@
-html {
-  background-image: url("back.png");
+/* html {
+  background-image: url("back.jpg");
   height:100%;
-}
+} */
 
 h1 {
   background-color: #76D950;
@@ -9,13 +9,15 @@ h1 {
 }
 
 
+.col s4{
+  grid-gap: 10px;
+}
 
 
-
-
-/* .outline {
+.outline {
   border: thin solid black;
+  background-color:  gray;
 }
  .row {
-   height: 500px;
+   height: 200px;
  } */
