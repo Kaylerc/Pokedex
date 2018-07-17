@@ -6,6 +6,6 @@ function loadDoc() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "https://raw.githubusercontent.com/mlaw-nycda/data/master/data", true);
+  xhttp.open("GET", "https://raw.githubusercontent.com/Kaylerc/Pokedex/master/testapi/Bulbasaur.js", true);
   xhttp.send();
 }
