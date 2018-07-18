@@ -3,6 +3,9 @@
 var Trainer = {
   firstName: 'langly',
   triningLevel: 28,
+  pokemon1: {
+    name:''
+  }
 
 
 }
