@@ -25,6 +25,7 @@ function loadPokemon() {
       console.log(pokedata);
     }
   };
-  newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
+  newPoke.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/1.json", true)
+  // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
   newPoke.send();
 }
