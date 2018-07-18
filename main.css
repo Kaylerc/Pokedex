@@ -1,7 +1,7 @@
-html {
+/* html {
   background-image: url("back.jpg");
   height:100%;
-}
+} */
 
 h1 {
   background-color: #76D950;
@@ -29,4 +29,5 @@ h1 {
      grid-template-columns: auto auto auto;
      grid-gap: 15px;
      padding-left: 5px;
+
  }
