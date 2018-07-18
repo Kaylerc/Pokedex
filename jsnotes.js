@@ -1,14 +1,70 @@
 // https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_create_1
 
-var Trainer = {
-  firstName: 'langly',
-  triningLevel: 28,
-  pokemon1: {
-    name:''
-  }
+// function loadDoc() {
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//       document.getElementById("info").innerHTML =
+//       this.responseText;
+//     }
+//   };
+//   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
+//   xhttp.send();
+// }
 
 
-}
+
+
+//
+// class Trainer {
+//   constructor(name) {
+//   this.name = name;
+//   this.battlesWon = 1398;
+//   this.pokemonCaught = 689;
+//   this.pokemonEvolved = 435;
+//   this.eggsHatched = 365;
+//   this.trainingLevel = 28;
+//   this.pokemon = {
+//     function: function() {
+//       loadPokemon1()
+//     }
+//   }
+// }
+// }
+
+
+
+// var pokemon1 = {
+//   name = pokedata.name,
+//   hp = pokedata.stats[5].base_stat;
+//   attack =
+//   defense =
+//   abilities =
+//   abilities2 =
+// }
+
+
+
+// class Trainer {
+//   this.name = name;
+//   this.battlesWon = 1398;
+//   this.pokemonCaught = 689;
+//   this.pokemonEvolved = 435;
+//   this.eggsHatched = 365;
+//   this trainingLevel = 28;
+//   this.pokemon = {
+//     function: function loadPokemon1();
+//   }
+// }
+
+
+
+
+
+
+
+
+
 
 
 // class Trainer {
@@ -18,10 +74,7 @@ var Trainer = {
 // }
 
 Carmander = {
-  hp: ,
-  attack:,
-  defense:,
-  abilities: '',
+
 
   }
 }

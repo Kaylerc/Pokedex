@@ -9,19 +9,27 @@ h1 {
 }
 
 
-.col s4{
+/* .col s4{
   grid-gap: 10px;
-}
+} */
 
 
 .outline {
   border: thin solid black;
-  /* background-color:  gray; */
-  background-image: url('images/dexb.png');
+  background-color:  gray;
+  /* background-image: url('images/dexb.png'); */
+  height: 150%;
 }
+
  .row {
    height: 200px;
  }
+
+
+.col-sm {
+
+}
+
 
 
  .poke-grid {
@@ -34,9 +42,9 @@ h1 {
  }
 
  .pic-size {
- height: 90px;
- width: 90px;
- align-items: center;
+ /* height: 90px; */
+ /* width: 90px; */
+ margin-left: 56px;
 }
 
  .bc {
