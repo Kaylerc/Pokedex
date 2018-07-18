@@ -28,7 +28,7 @@ Carmander = {
 
 // +++++++++++++++++++++++++
 
-// class player {
+// class Trainer {
 //   constructor(hp, attack, defense, abilities) {
 //     this.hp = 0;
 //     this.attack = 0;
@@ -37,7 +37,7 @@ Carmander = {
 //   }
 // }
 //
-// class Pokemon extends player {
+// class Lilo extends Trainer {
 //   constructor(hp, attack, defense, abilities) {
 //     super();
 //     this.name = name;
@@ -45,6 +45,10 @@ Carmander = {
 //     this.attack = 0;
 //     this.defense = 0;
 //     this.abilities = ''
+      this.pokemon = {
+        name: '',
+        hp:
+      }
 //   }
 // }
 
