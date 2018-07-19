@@ -14,7 +14,8 @@
   text-align: center;
   font-size: 40px;
   margin-left: 244px;
-  margin-right:244px
+  margin-right:244px;
+  margin-top: 21px;
 }
 
 .box {
@@ -22,7 +23,8 @@
   padding-right: 15px;
   padding-left: 11px;
   padding-bottom: 145px;
-  margin: 100px;
+  margin-left: 85px;
+  margin-right: 128px;
 }
 /* .col s4{
   grid-gap: 10px;
