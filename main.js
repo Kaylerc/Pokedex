@@ -18,65 +18,36 @@ var trainer = {
     return allPokemon;
   },
 
-  get: function (name) {
-
+  get: function(name) {
+    for(i = 0; i < allPokemon.length; i++) {
+      if (name == this.pokemon[i].name){
+        console.log(allPokemon[i]);
+      }
+    }
   }
-
 }
 
+// Jigglypuff
 
-function loadPokemon() {
+function loadPokemon1() {
   var newPoke = new XMLHttpRequest();
   newPoke.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var pokedata = JSON.parse(this.responseText);
 
-      newPokemon(pokedata.name, pokedata.stats[5].base_stat, pokedata.stats[4].base_stat, pokedata.stats[3].base_stat, [pokedata.abilities[0].ability.name, pokedata.abilities[1].ability.name])
+      newPokemon(pokedata.name, pokedata.stats[5].base_stat, pokedata.stats[4].base_stat, pokedata.stats[3].base_stat, [pokedata.abilities[0].ability.name, pokedata.abilities[1].ability.name, pokedata.abilities[2].ability.name])
 
-      name: document.getElementById("name").innerHTML = pokedata.name;
-      hp: document.getElementById("hp").innerHTML = pokedata.stats[5].base_stat;
-      attack: document.getElementById("attack").innerHTML = pokedata.stats[4].base_stat;
-      defense: document.getElementById("defense").innerHTML = pokedata.stats[3].base_stat;
-      abilities: document.getElementById("abilities").innerHTML = pokedata.abilities[0].ability.name;
-      abilities2: document.getElementById("abilities2").innerHTML = pokedata.abilities[1].ability.name;
+      name: document.getElementById("name").innerHTML =  pokedata.name;
+      hp: document.getElementById("hp").innerHTML = 'HP   :  ' + pokedata.stats[5].base_stat;
+      attack: document.getElementById("attack").innerHTML = 'Attack :   ' + pokedata.stats[4].base_stat;
+      defense: document.getElementById("defense").innerHTML = 'Defense : ' + pokedata.stats[3].base_stat;
+      abilities: document.getElementById("abilities").innerHTML ='Abilities : - '+ pokedata.abilities[0].ability.name;
+      abilities2: document.getElementById("abilities2").innerHTML = '   ' + pokedata.abilities[1].ability.name;
       abilities3: document.getElementById("abilities3").innerHTML = pokedata.abilities[2].ability.name;
-
-
-
-      // name: document.getElementById("name").innerHTML = pokedata.name;
-      // hp: document.getElementById("hp").innerHTML = pokedata.stats[5].base_stat;
-      // attack: document.getElementById("attack").innerHTML = pokedata.stats[4].base_stat;
-      // defense: document.getElementById("defense").innerHTML = pokedata.stats[3].base_stat;
-      // abilities: document.getElementById("abilities").innerHTML = pokedata.abilities[0].ability.name;
-      // abilities2: document.getElementById("abilities2").innerHTML = pokedata.abilities[1].ability.name;
-
-
-      // newPokemon(pokeName, pokeHp, pokeAttack, pokeDefense, pokeAbilities)
-      //
-      //
-      // var pokeName = pokedata.name;
-      //  document.getElementById("name").innerHTML = pokeName;
-      //
-      // var pokeHp = pokedata.stats[5].base_stat;
-      //   document.getElementById("hp").innerHTML = pokeHp;
-      //
-      // var pokeAttack = pokedata.stats[4].base_stat;
-      //   document.getElementById("attack").innerHTML = pokeAttack;
-      //
-      // var pokeDefense = pokedata.stats[3].base_stat;
-      //   document.getElementById("defense").innerHTML = pokeDefense;
-      //
-      // var pokeAbilities = pokedata.abilities[0].ability.name;
-      //   document.getElementById("abilities").innerHTML = pokeAbilities;
-      //
-      // var pokeAbilities2 = pokedata.abilities[1].ability.name;
-      //   document.getElementById("abilities2").innerHTML = pokeAbilities2;
 
       console.log(pokedata);
     }
 
-    // totalallPokemon++;
-    // allPokemon.push(pokemon);
   };
   newPoke.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/39.json", true);
   // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
@@ -84,10 +55,57 @@ function loadPokemon() {
 }
 
 
-// pokemon = {
-//   name = bulbName,
-//   hp = bulbHp,
-//   attack: bulbAttack,
-//   defense: bulbDefense,
-//   abilities: [bulbAbilities, bulbAbilities2]
-// }
+// Bulbasaur
+
+function loadPokemon2() {
+  var newPoke2 = new XMLHttpRequest();
+  newPoke2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var pokedata2 = JSON.parse(this.responseText);
+
+      newPokemon(pokedata2.name, pokedata2.stats[5].base_stat, pokedata2.stats[4].base_stat, pokedata2.stats[3].base_stat, [pokedata2.abilities[0].ability.name, pokedata2.abilities[1].ability.name])
+
+      name: document.getElementById("bname").innerHTML =  pokedata2.name;
+      hp: document.getElementById("bhp").innerHTML = 'HP   :  ' + pokedata2.stats[5].base_stat;
+      attack: document.getElementById("battack").innerHTML = 'Attack :   ' + pokedata2.stats[4].base_stat;
+      defense: document.getElementById("bdefense").innerHTML = 'Defense : ' + pokedata2.stats[3].base_stat;
+      abilities: document.getElementById("babilities").innerHTML ='Abilities : - '+ pokedata2.abilities[0].ability.name;
+      abilities2: document.getElementById("babilities2").innerHTML = '   ' + pokedata2.abilities[1].ability.name;
+
+
+      console.log(pokedata2);
+    }
+
+  };
+  newPoke2.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/1.json", true);
+  // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
+  newPoke2.send();
+}
+
+
+// Charmander
+
+function loadPokemon3() {
+  var newPoke3 = new XMLHttpRequest();
+  newPoke3.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var pokedata3 = JSON.parse(this.responseText);
+
+      newPokemon(pokedata3.name, pokedata3.stats[5].base_stat, pokedata3.stats[4].base_stat, pokedata3.stats[3].base_stat, [pokedata3.abilities[0].ability.name, pokedata3.abilities[1].ability.name])
+
+      name: document.getElementById("cname").innerHTML =  pokedata3.name;
+      hp: document.getElementById("chp").innerHTML = 'HP   :  ' + pokedata3.stats[5].base_stat;
+      attack: document.getElementById("cattack").innerHTML = 'Attack :   ' + pokedata3.stats[4].base_stat;
+      defense: document.getElementById("cdefense").innerHTML = 'Defense : ' + pokedata3.stats[3].base_stat;
+      abilities: document.getElementById("cabilities").innerHTML ='Abilities : - '+ pokedata3.abilities[0].ability.name;
+      abilities2: document.getElementById("cabilities2").innerHTML = '   ' + pokedata3.abilities[1].ability.name;
+
+
+      console.log(pokedata3);
+    }
+
+  };
+  newPoke3.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/4.json", true);
+  // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
+  newPoke3.send();
+}
