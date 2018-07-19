@@ -126,3 +126,24 @@ Carmander = {
 //     this.abilities = ''
 //   }
 // }
+++++++++++++++++++++
+
+owner = {
+  name: 'rick flair',
+  employees: users,
+  getRoster: funciton() {
+    return this.employees;
+  }
+}
+
+function createUser(name,email) {
+  var user = {
+    name: name,
+    email: emial
+  }
+  totalUsers++;
+  users.push(user);
+}
+
+
+users = []
