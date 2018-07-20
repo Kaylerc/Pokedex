@@ -49,8 +49,9 @@ function loadPokemon1() {
     }
 
   };
-  
   newPoke.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/39.json", true);
+
+  // newPoke.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/39.json", true);
   // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/39/", true);
   newPoke.send();
 }
