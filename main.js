@@ -43,7 +43,7 @@ function loadPokemon1() {
       defense: document.getElementById("defense").innerHTML = '<b>Defense : </b>' + pokedata.stats[3].base_stat;
       abilities: document.getElementById("abilities").innerHTML ='<b>Abilities : </b> '+ pokedata.abilities[0].ability.name;
       abilities2: document.getElementById("abilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata.abilities[1].ability.name;
-      abilities3: document.getElementById("abilities3").innerHTML = pokedata.abilities[2].ability.name;
+      abilities3: document.getElementById("abilities3").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata.abilities[2].ability.name;
 
       console.log(pokedata);
     }
@@ -69,8 +69,8 @@ function loadPokemon2() {
       hp: document.getElementById("bhp").innerHTML = '<b>HP  : </b> ' + pokedata2.stats[5].base_stat;
       attack: document.getElementById("battack").innerHTML = '<b>Attack :   </b>' + pokedata2.stats[4].base_stat;
       defense: document.getElementById("bdefense").innerHTML = '<b>Defense :</b> ' + pokedata2.stats[3].base_stat;
-      abilities: document.getElementById("babilities").innerHTML ='<b>Abilities : </b>- '+ pokedata2.abilities[0].ability.name;
-      abilities2: document.getElementById("babilities2").innerHTML = '   ' + pokedata2.abilities[1].ability.name;
+      abilities: document.getElementById("babilities").innerHTML ='<b>Abilities : </b>'+ pokedata2.abilities[0].ability.name;
+      abilities2: document.getElementById("babilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata2.abilities[1].ability.name;
 
 
       console.log(pokedata2);
@@ -95,10 +95,10 @@ function loadPokemon3() {
 
       name: document.getElementById("cname").innerHTML =  pokedata3.name;
       hp: document.getElementById("chp").innerHTML = '<b>HP  </b></b> :  ' + pokedata3.stats[5].base_stat;
-      attack: document.getElementById("cattack").innerHTML = '<b>Attack : </b>  ' + pokedata3.stats[4].base_stat;
+      attack: document.getElementById("cattack").innerHTML = '<b>Attack : </b>    ' + pokedata3.stats[4].base_stat;
       defense: document.getElementById("cdefense").innerHTML = '<b>Defense :</b> ' + pokedata3.stats[3].base_stat;
-      abilities: document.getElementById("cabilities").innerHTML ='<b>Abilities</b> : - '+ pokedata3.abilities[0].ability.name;
-      abilities2: document.getElementById("cabilities2").innerHTML = '   ' + pokedata3.abilities[1].ability.name;
+      abilities: document.getElementById("cabilities").innerHTML ='<b>Abilities</b> :  '+ pokedata3.abilities[0].ability.name;
+      abilities2: document.getElementById("cabilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata3.abilities[1].ability.name;
 
 
       console.log(pokedata3);

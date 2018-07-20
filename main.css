@@ -97,13 +97,13 @@ html {
 @media screen and (max-width: 375px) {
   .poke-grid {
     grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 689px;
     grid-gap: 150px;
     padding-left: 6px;
     padding-top: 4px;
-    padding-right: 6px; }
+    padding-right: 6px;
+  }
 
-  html {
-    opacity: 0.5; }
 
   .box {
     background-color: #f49fbb;
@@ -114,10 +114,11 @@ html {
     margin-right: 128px; }
   }
 
-  @media screeen and (min-width:376px) and (max-width:768px) {
+  @media screen and (min-width:376px) and (max-width:768px) {
     /* min and max are in relation to dexice paramaters */
     html {
-      opacity: 0.5; }
+      opacity: 0.5;
+    }
 
   }
 
