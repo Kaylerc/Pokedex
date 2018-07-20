@@ -41,8 +41,8 @@ function loadPokemon1() {
       hp: document.getElementById("hp").innerHTML = '<b>HP   :  </b>' + pokedata.stats[5].base_stat;
       attack: document.getElementById("attack").innerHTML = '<b>Attack :  </b> ' + pokedata.stats[4].base_stat;
       defense: document.getElementById("defense").innerHTML = '<b>Defense : </b>' + pokedata.stats[3].base_stat;
-      abilities: document.getElementById("abilities").innerHTML ='<b>Abilities : </b>- '+ pokedata.abilities[0].ability.name;
-      abilities2: document.getElementById("abilities2").innerHTML = '   ' + pokedata.abilities[1].ability.name;
+      abilities: document.getElementById("abilities").innerHTML ='<b>Abilities : </b> '+ pokedata.abilities[0].ability.name;
+      abilities2: document.getElementById("abilities2").innerHTML = '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + pokedata.abilities[1].ability.name;
       abilities3: document.getElementById("abilities3").innerHTML = pokedata.abilities[2].ability.name;
 
       console.log(pokedata);
