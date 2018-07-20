@@ -104,13 +104,14 @@ margin-top: 17px;
 
 
 .home {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  padding-top: 220px;
+  height: 100%;
+  width: 82%;
 }
 
 html {
   background-color: pink;
+
 }
 
 /* overlay */
