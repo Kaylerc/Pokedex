@@ -49,6 +49,7 @@ function loadPokemon1() {
     }
 
   };
+  
   newPoke.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/39.json", true);
   // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/39/", true);
   newPoke.send();
@@ -77,7 +78,9 @@ function loadPokemon2() {
     }
 
   };
-  newPoke2.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/1.json", true);
+  newPoke2.open("GET", "https://raw.githubusercontent.com/Kaylerc/Pokedex/master/testapi/Bulbasaur.js", true);
+
+  // newPoke2.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/1.json", true);
   // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
   newPoke2.send();
 }
@@ -105,7 +108,9 @@ function loadPokemon3() {
     }
 
   };
-  newPoke3.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/4.json", true);
+  newPoke3.open("GET", "https://raw.githubusercontent.com/Kaylerc/Pokedex/master/testapi/Charmander.js", true);
+
+  // newPoke3.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/4.json", true);
   // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/4/", true);
   newPoke3.send();
 }
