@@ -21,23 +21,14 @@
   margin-left: 85px;
   margin-right: 128px; }
 
-/* .col s4{
-  grid-gap: 10px;
-} */
 .outline {
   border: thin solid black;
   background-color: #bbbcb7;
-  /* position: relative; */
-  /* background-image: url('images/dexb.png'); */
-  /* background-image: url('images/dexb2.png'); */
   height: 150%; }
 
 .row {
-  height: 200px; }
+  height: 200%; }
 
-/* .col-sm {
-
-} */
 /* FA89F3 */
 .poke-grid {
   display: grid;
@@ -102,5 +93,32 @@ html {
   z-index: 1;
   top: -12px;
   left: 12px; }
+
+@media screen and (max-width: 375px) {
+  .poke-grid {
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 150px;
+    padding-left: 6px;
+    padding-top: 4px;
+    padding-right: 6px; }
+
+  html {
+    opacity: 0.5; }
+
+  .box {
+    background-color: #f49fbb;
+    padding-right: 15px;
+    padding-left: 11px;
+    padding-bottom: 145px;
+    margin-left: 85px;
+    margin-right: 128px; }
+  }
+
+  @media screeen and (min-width:376px) and (max-width:768px) {
+    /* min and max are in relation to dexice paramaters */
+    html {
+      opacity: 0.5; }
+
+  }
 
 /*# sourceMappingURL=main.css.map */
