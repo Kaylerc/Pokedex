@@ -92,4 +92,11 @@ margin-top: 17px;
  .bc {
    font-weight: bold;
    text-align: Center;
+   font-size: 20px;
+   text-transform: uppercase;
  }
+
+
+.stats {
+  padding-left: 92px;
+}

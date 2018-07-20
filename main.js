@@ -38,10 +38,10 @@ function loadPokemon1() {
       newPokemon(pokedata.name, pokedata.stats[5].base_stat, pokedata.stats[4].base_stat, pokedata.stats[3].base_stat, [pokedata.abilities[0].ability.name, pokedata.abilities[1].ability.name, pokedata.abilities[2].ability.name])
 
       name: document.getElementById("name").innerHTML =  pokedata.name;
-      hp: document.getElementById("hp").innerHTML = 'HP   :  ' + pokedata.stats[5].base_stat;
-      attack: document.getElementById("attack").innerHTML = 'Attack :   ' + pokedata.stats[4].base_stat;
-      defense: document.getElementById("defense").innerHTML = 'Defense : ' + pokedata.stats[3].base_stat;
-      abilities: document.getElementById("abilities").innerHTML ='Abilities : - '+ pokedata.abilities[0].ability.name;
+      hp: document.getElementById("hp").innerHTML = '<b>HP   :  </b>' + pokedata.stats[5].base_stat;
+      attack: document.getElementById("attack").innerHTML = '<b>Attack :  </b> ' + pokedata.stats[4].base_stat;
+      defense: document.getElementById("defense").innerHTML = '<b>Defense : </b>' + pokedata.stats[3].base_stat;
+      abilities: document.getElementById("abilities").innerHTML ='<b>Abilities : </b>- '+ pokedata.abilities[0].ability.name;
       abilities2: document.getElementById("abilities2").innerHTML = '   ' + pokedata.abilities[1].ability.name;
       abilities3: document.getElementById("abilities3").innerHTML = pokedata.abilities[2].ability.name;
 
@@ -66,10 +66,10 @@ function loadPokemon2() {
       newPokemon(pokedata2.name, pokedata2.stats[5].base_stat, pokedata2.stats[4].base_stat, pokedata2.stats[3].base_stat, [pokedata2.abilities[0].ability.name, pokedata2.abilities[1].ability.name])
 
       name: document.getElementById("bname").innerHTML =  pokedata2.name;
-      hp: document.getElementById("bhp").innerHTML = 'HP   :  ' + pokedata2.stats[5].base_stat;
-      attack: document.getElementById("battack").innerHTML = 'Attack :   ' + pokedata2.stats[4].base_stat;
-      defense: document.getElementById("bdefense").innerHTML = 'Defense : ' + pokedata2.stats[3].base_stat;
-      abilities: document.getElementById("babilities").innerHTML ='Abilities : - '+ pokedata2.abilities[0].ability.name;
+      hp: document.getElementById("bhp").innerHTML = '<b>HP  : </b> ' + pokedata2.stats[5].base_stat;
+      attack: document.getElementById("battack").innerHTML = '<b>Attack :   </b>' + pokedata2.stats[4].base_stat;
+      defense: document.getElementById("bdefense").innerHTML = '<b>Defense :</b> ' + pokedata2.stats[3].base_stat;
+      abilities: document.getElementById("babilities").innerHTML ='<b>Abilities : </b>- '+ pokedata2.abilities[0].ability.name;
       abilities2: document.getElementById("babilities2").innerHTML = '   ' + pokedata2.abilities[1].ability.name;
 
 
@@ -94,10 +94,10 @@ function loadPokemon3() {
       newPokemon(pokedata3.name, pokedata3.stats[5].base_stat, pokedata3.stats[4].base_stat, pokedata3.stats[3].base_stat, [pokedata3.abilities[0].ability.name, pokedata3.abilities[1].ability.name])
 
       name: document.getElementById("cname").innerHTML =  pokedata3.name;
-      hp: document.getElementById("chp").innerHTML = 'HP   :  ' + pokedata3.stats[5].base_stat;
-      attack: document.getElementById("cattack").innerHTML = 'Attack :   ' + pokedata3.stats[4].base_stat;
-      defense: document.getElementById("cdefense").innerHTML = 'Defense : ' + pokedata3.stats[3].base_stat;
-      abilities: document.getElementById("cabilities").innerHTML ='Abilities : - '+ pokedata3.abilities[0].ability.name;
+      hp: document.getElementById("chp").innerHTML = '<b>HP  </b></b> :  ' + pokedata3.stats[5].base_stat;
+      attack: document.getElementById("cattack").innerHTML = '<b>Attack : </b>  ' + pokedata3.stats[4].base_stat;
+      defense: document.getElementById("cdefense").innerHTML = '<b>Defense :</b> ' + pokedata3.stats[3].base_stat;
+      abilities: document.getElementById("cabilities").innerHTML ='<b>Abilities</b> : - '+ pokedata3.abilities[0].ability.name;
       abilities2: document.getElementById("cabilities2").innerHTML = '   ' + pokedata3.abilities[1].ability.name;
 
 
