@@ -49,7 +49,7 @@ function loadPokemon1() {
     }
 
   };
-  newPoke.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/39.json", true);
+  newPoke.open("GET", "https://raw.githubusercontent.com/Kaylerc/Pokedex/master/testapi/jigglypuff.js", true);
 
   // newPoke.open("GET", "https://pokeapi-nycda.firebaseio.com/pokemon/39.json", true);
   // newPoke.open("GET", "https://pokeapi.co/api/v2/pokemon/39/", true);

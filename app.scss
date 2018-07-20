@@ -1,6 +1,6 @@
 $height: 100%;
 $iphonef: 375px;
-
+$unipink:  #f49fbb;
 
 
 
@@ -26,10 +26,10 @@ $iphonef: 375px;
   width: 404px;
   padding: 20px;
 
-  
+
 }
 .box {
-  background-color: #f49fbb;
+  background-color: $unipink;
   padding-right: 15px;
   padding-left: 11px;
   padding-bottom: 145px;
@@ -105,7 +105,7 @@ margin-top: 17px;
 }
 
 html {
-  background-color: pink;
+  background-color: $unipink;
 }
 
 /* overlay */
@@ -138,6 +138,10 @@ html {
 // mobile response iphone5
 
 @media screen and (max-width: $iphonef) {
+  body {
+    overflow-x: hidden;
+  }
+
   .poke-grid {
     grid-template-rows: 250px 250px 250px;
     grid-template-columns: 536px;
@@ -149,19 +153,19 @@ html {
   }
 
   .box {
-    background-color: #f49fbb;
+    background-color: $unipink;
     width: 228% ;
     padding-right: 2px;
     margin-left: 144px;
   }
 
-  #top {
+  #top img{
     /* background-color: #76D950; */
-    background-color: #f4943f;
-    font-size: 40px;
-    margin-left: 244px;
-    margin-right:244px;
-    margin-top: 21px;
+    // background-color: #f4943f;
+    // font-size: 40px;
+    margin-left: -127px;
+    // margin-right:244px;
+    // margin-top: 21px;
   }
 
 

@@ -7,7 +7,7 @@
 #top {
   /* background-color: #76D950; */
   background-color: #f4943f;
-  /* text-align: center; */
+  text-align: center;
   font-size: 40px;
   margin-left: 244px;
   margin-right: 244px;
@@ -75,7 +75,7 @@
   width: 82%; }
 
 html {
-  background-color: pink; }
+  background-color: #f49fbb; }
 
 /* overlay */
 /* .mainRunner {
@@ -99,6 +99,9 @@ html {
   left: 12px; }
 
 @media screen and (max-width: 375px) {
+  body {
+    overflow-x: hidden; }
+
   .poke-grid {
     grid-template-rows: 250px 250px 250px;
     grid-template-columns: 536px;
@@ -114,12 +117,8 @@ html {
     padding-right: 2px;
     margin-left: 144px; }
 
-  #top {
+  #top img {
     /* background-color: #76D950; */
-    background-color: #f4943f;
-    font-size: 40px;
-    margin-left: 244px;
-    margin-right: 244px;
-    margin-top: 21px; } }
+    margin-left: -127px; } }
 
 /*# sourceMappingURL=main.css.map */
