@@ -1,9 +1,12 @@
+$height: 100%;
+
+
 
 
 
 #background {
     /* background-image: url("back.jpg"); */
-    height:100%;
+    height: $height;
     /* opacity:.5; */
     background-image: url("images/777.gif");
   }
@@ -54,13 +57,13 @@
 /* FA89F3 */
 
 
- .poke-grid {
-     display: grid;
-     grid-template-rows: 250px;
-     grid-template-columns: 333px 333px 333px;
-     grid-gap: 15px;
-     padding-left: 9px;
-     padding-top: 4px
+.poke-grid {
+   display: grid;
+   grid-template-rows: 250px;
+   grid-template-columns: 333px 333px 333px;
+   grid-gap: 15px;
+   padding-left: 9px;
+   padding-top: 4px
 
  }
 
@@ -93,7 +96,7 @@ margin-top: 17px;
 
 
 
- .bc {
+.bc {
    font-weight: bold;
    text-align: Center;
    font-size: 20px;
