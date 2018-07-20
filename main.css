@@ -100,3 +100,14 @@ margin-top: 17px;
 .stats {
   padding-left: 92px;
 }
+
+
+.home {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+html {
+  background-color: pink;
+}
