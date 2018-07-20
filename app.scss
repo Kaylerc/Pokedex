@@ -22,6 +22,12 @@ $iphonef: 375px;
   margin-top: 21px;
 }
 
+#btns {
+  width: 404px;
+  padding: 20px;
+
+  
+}
 .box {
   background-color: #f49fbb;
   padding-right: 15px;
@@ -134,22 +140,30 @@ html {
 @media screen and (max-width: $iphonef) {
   .poke-grid {
     grid-template-rows: 250px 250px 250px;
-    grid-template-columns: 689px;
+    grid-template-columns: 536px;
     grid-gap: 150px;
     padding-right: 6px;
-  }
-
-  html{
-    opacity:0.5;
+    padding-left: 75px;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 
   .box {
     background-color: #f49fbb;
-    padding-right: 15px;
-    padding-left: 11px;
-    padding-bottom: 145px;
+    width: 228% ;
+    padding-right: 2px;
     margin-left: 144px;
-    margin-right: 128px;
   }
+
+  #top {
+    /* background-color: #76D950; */
+    background-color: #f4943f;
+    font-size: 40px;
+    margin-left: 244px;
+    margin-right:244px;
+    margin-top: 21px;
+  }
+
+
 
 }

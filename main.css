@@ -7,11 +7,15 @@
 #top {
   /* background-color: #76D950; */
   background-color: #f4943f;
-  text-align: center;
+  /* text-align: center; */
   font-size: 40px;
   margin-left: 244px;
   margin-right: 244px;
   margin-top: 21px; }
+
+#btns {
+  width: 404px;
+  padding: 20px; }
 
 .box {
   background-color: #f49fbb;
@@ -97,29 +101,25 @@ html {
 @media screen and (max-width: 375px) {
   .poke-grid {
     grid-template-rows: 250px 250px 250px;
-    grid-template-columns: 689px;
+    grid-template-columns: 536px;
     grid-gap: 150px;
-    padding-left: 6px;
-    padding-top: 4px;
     padding-right: 6px;
-  }
-
+    padding-left: 75px;
+    padding-top: 65px;
+    padding-bottom: 65px; }
 
   .box {
     background-color: #f49fbb;
-    padding-right: 15px;
-    padding-left: 11px;
-    padding-bottom: 145px;
-    margin-left: 85px;
-    margin-right: 128px; }
-  }
+    width: 228%;
+    padding-right: 2px;
+    margin-left: 144px; }
 
-  @media screen and (min-width:376px) and (max-width:768px) {
-    /* min and max are in relation to dexice paramaters */
-    html {
-      opacity: 0.5;
-    }
-
-  }
+  #top {
+    /* background-color: #76D950; */
+    background-color: #f4943f;
+    font-size: 40px;
+    margin-left: 244px;
+    margin-right: 244px;
+    margin-top: 21px; } }
 
 /*# sourceMappingURL=main.css.map */
